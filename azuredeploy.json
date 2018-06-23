@@ -133,7 +133,7 @@
   },
   "variables": {
     "subnetRef": "[resourceId(parameters('existingVirtualNetworkRGName'),'Microsoft.Network/virtualNetworks/subnets',parameters('existingVirtualNetworkName'),parameters('existingSubnetName'))]",
-    "deploySFCIClusterTemplateURL": "[concat(parameters('_artifactsLocation'),'/nestedtemplates/deploy-cluster.json',parameters('_artifactsLocationSasToken'))]",
+    "deploySFCIClusterTemplateURL": "[concat(parameters('_artifactsLocation'),'/deploy-cluster.json',parameters('_artifactsLocationSasToken'))]",
     "deploySFCICluster": "deploySFCICluster",
     "vmCount" : 2
   },
